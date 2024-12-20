@@ -10,7 +10,10 @@ public class Task4 {
 
         int[] b = new int[a.length+k];
 
-        System.arraycopy(a, 0, b, k, a.length);
+        for (int i = 0; i < a.length; i++) {
+            b[i+k-1] = a[i];
+        }
+//        System.arraycopy(a, 0, b, k, a.length);
 
         System.out.println(Arrays.toString(b));
         return b;

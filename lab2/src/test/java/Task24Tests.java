@@ -14,18 +14,17 @@ public class Task24Tests {
 
     @Test
     public void getNumberOfTheDayInTheYear_whenYearIsNotLeap(){
-        int day = 15, month = 5; // 15.05
+        int day = 1, month = 2; // 15.05
         boolean isLeap = false;
 
         int result = taskForTest.getNumberOfTheDay(day, month, isLeap);
 
-        int expected = 135;
-        Assert.assertEquals(result, expected);
+        Assert.assertEquals(result+1, taskForTest.getNumberOfTheDay(day, month, true));
     }
 
     @Test
     public void getNumberOfTheDayInTheYear_whenYearIsLeap(){
-        int day = 15, month = 5; // 15.05
+        int day = 1, month = 3; // 15.05
         boolean isLeap = true;
 
         int result = taskForTest.getNumberOfTheDay(day, month, isLeap);

@@ -15,7 +15,7 @@ public class Task9 {
         System.out.println("A^3 :\t " + C);
         A = B * C;
         System.out.println("A^5 :\t" + A);
-        B = B * A * C;
+        B = B * B;
         System.out.println("A^10:\t " + B);
         C = B * A;
         System.out.println("A^15:\t " + C);
